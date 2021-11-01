@@ -1,21 +1,36 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Busch & Busch",
+  "name": "Busch & Busch Website",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "Busch_und_Busch_Logo_Black.png",
+      "type": "image/png",
+      "sizes": "2000x2000"
     },
     {
-      "src": "logo192.png",
+      "src": "Busch_und_Busch_Logo_White.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "2000x2000"
     },
     {
-      "src": "logo512.png",
+      "src": "Busch_und_Busch_Logo_Gold.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "2000x2000"
+    },
+    {
+      "src": "Busch_und_Busch_Logo_Gold_Dark.png",
+      "type": "image/png",
+      "sizes": "2000x2000"
+    },
+    {
+      "src": "Busch_und_Busch_Logo_Gold_big-text.png",
+      "type": "image/png",
+      "sizes": "1923×1077"
+    },
+    {
+      "src": "Busch_und_Busch_Logo_Gold_Dark_big-text.png",
+      "type": "image/png",
+      "sizes": "1923×1077"
     }
   ],
   "start_url": ".",
