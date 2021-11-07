@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -8,7 +8,11 @@ module.exports = {
       },
       textColor: {
         "logo-light": "#ffd700",
-        "logo-dark": "ca9800",
+        "logo-dark": "#9c7500",
+      },
+      borderColor: {
+        "logo-light": "#ffd700",
+        "logo-dark": "#9c7500",
       },
     },
   },

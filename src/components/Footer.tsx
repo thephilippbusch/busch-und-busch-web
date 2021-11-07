@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div
       id="Footer"
-      className="w-full h-16 bg-transparent flex justify-center px-10 items-center space-x-1 text-sm sm:text-base"
+      className="w-full h-16 bg-gray-700 text-gray-100 flex justify-center px-10 items-center space-x-1 text-sm sm:text-base"
     >
       <a
         className="hover:text-logo focus:underline focus:outline-none"

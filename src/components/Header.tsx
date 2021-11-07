@@ -1,12 +1,13 @@
 import { MenuIcon } from "@heroicons/react/solid";
-import { sidebarState } from "../recoilStates";
-import { useRecoilState } from "recoil";
+import { sidebarState, themeState } from "../recoilStates";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { useHistory } from "react-router";
 
 const Header = () => {
   const [sidebar, setSidebar] = useRecoilState(sidebarState);
 
   let history = useHistory();
+  let theme = useRecoilValue(themeState);
 
   return (
     <div
@@ -15,7 +16,7 @@ const Header = () => {
     >
       <button
         id="Header.menu-button"
-        className="p-2 rounded border border-transparent hover:bg-gray-800 focus:outline-none focus:border-gray-500"
+        className="p-2 rounded border border-transparent hover:bg-gray-200 dark:hover:bg-gray-800 focus:outline-none focus:border-gray-500"
         onClick={() => setSidebar(!sidebar)}
       >
         <p className="sr-only">Open Sidebar</p>
@@ -24,7 +25,11 @@ const Header = () => {
       <div id="Header.title" className="flex items-center">
         {/* <h1 className="font-logo text-logo">Busch &amp; Busch</h1> */}
         <img
-          src="Busch_und_Busch_Logo_Gold_big-text.png"
+          src={
+            theme === "light"
+              ? `Busch_und_Busch_Logo_Gold_Dark_big-text.png`
+              : `Busch_und_Busch_Logo_Gold_big-text.png`
+          }
           alt="logo"
           className="h-16 cursor-pointer"
           onClick={() => history.push("/")}

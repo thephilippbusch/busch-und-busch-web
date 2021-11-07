@@ -8,5 +8,5 @@ export const sidebarState = atom({
 
 export const themeState = atom({
   key: "themeState",
-  default: "light",
+  default: "dark",
 });
